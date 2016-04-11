@@ -46,15 +46,19 @@ Update your app delegate to include creation of an `MFPSession` object and a URL
 
 In order for the native MyFitnessPal iOS app to call back into your app, you'll need to add a `URL Type` to your `Info.plist`. 
 
-Go to Targets -> "target name" -> Info -> URL Types. From there, you can set a target URL. The URL scheme must have a prefix of "mfp". Optionally, if you have multiple apps on the same device, you can have a suffix such as "premium."
+Go to Targets -> "target name" -> Info -> URL Types. From there, you can set a target URL. The URL scheme must have a prefix of `mfp`. Optionally, if you have multiple apps on the same device, you can have a suffix such as `premium`.
 
 Putting it all together, your URL scheme would be `mfp-sampleapiclient-premium`. If you only have one app, then the URL scheme would be `mfp-sampleapiclient`.
 
-## Whitelisting Custom URL Schemas
+<img src="https://github.com/myfitnesspal/ios-sdk/blob/master/readme_images/URL_Types.png" alt="URL Types"/> 
 
-The SDK uses app to app deep linking which requires use of the `canOpenUrl` method to see if the MyFitnessPal app is installed on your device. The release of iOS 9 introduced security measures against this which require us to now whitelist our custom URL schemas: `mfp` and `mfphd`. 
+## Whitelisting Custom URL Schemes
+
+The SDK uses app to app deep linking which requires use of the `canOpenUrl` method to see if the MyFitnessPal app is installed on your device. iOS 9 introduced security measures against this which require us to now whitelist our custom URL schemes. 
 
 To do this open up your `Info.plist` file and add an array called `LSApplicationQueriesSchemes`. Then add 2 strings as children called `mfp` and `mfphd`.
+
+<img src="https://github.com/myfitnesspal/ios-sdk/blob/master/readme_images/LSApplicationQueriesSchemes.png" alt="LSApplicationQueriesSchemes"/> 
 
 ## Working with Tokens
 
@@ -101,6 +105,21 @@ See the following properties on `MFPAccessTokenData`:
     }];
   }
 }
+```
+### Reading data
+
+```objc
+  MFPSession *activeSession = [MFPSession activeSession];
+  if ([activeSession isOpen]) {
+    NSString *txt = [NSString stringWithFormat:@"Active Session:\nOPEN\n\naccessToken:\n%@\n\nrefreshToken:\n%@\n\nexpirationDate:\n%@",
+                     activeSession.accessTokenData.accessToken,
+                     activeSession.accessTokenData.refreshToken,
+                     activeSession.accessTokenData.expirationDate];
+    self.textView.text = txt;
+  }
+  else {
+    self.textView.text = @"Active Session: CLOSED";
+  }
 ```
 
 ## Partner API Reference
