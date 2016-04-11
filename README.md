@@ -1,6 +1,3 @@
-## ios-sdk
-The MyFitnessPal SDK for iOS
-
 ## Introduction
 The purpose of this document is to provide installation and usage instructions for the MyFitnessPal SDK for iOS.
 
@@ -121,6 +118,10 @@ See the following properties on `MFPAccessTokenData`:
     self.textView.text = @"Active Session: CLOSED";
   }
 ```
+
+## Further Documentation
+
+Doxygen documentation can be found in this repo under `/Documentation/html/index.html`.
 
 ## Partner API Reference
 
