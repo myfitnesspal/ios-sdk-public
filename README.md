@@ -50,7 +50,7 @@ Go to Targets -> "target name" -> Info -> URL Types. From there, you can set a t
 
 Putting it all together, your URL scheme would be `mfp-sampleapiclient-premium`. If you only have one app, then the URL scheme would be `mfp-sampleapiclient`.
 
-<img src="https://github.com/myfitnesspal/ios-sdk/blob/master/readme_images/URL_Types.png" alt="URL Types"/> 
+<img src="https://github.com/myfitnesspal/ios-sdk/blob/master/readme_images/URL_Types.png" alt="URL Types" width="700"/> 
 
 ## Whitelisting Custom URL Schemes
 
@@ -58,7 +58,7 @@ The SDK uses app to app deep linking which requires use of the `canOpenUrl` meth
 
 To do this open up your `Info.plist` file and add an array called `LSApplicationQueriesSchemes`. Then add 2 strings as children called `mfp` and `mfphd`.
 
-<img src="https://github.com/myfitnesspal/ios-sdk/blob/master/readme_images/LSApplicationQueriesSchemes.png" alt="LSApplicationQueriesSchemes"/> 
+<img src="https://github.com/myfitnesspal/ios-sdk/blob/master/readme_images/LSApplicationQueriesSchemes.png" alt="LSApplicationQueriesSchemes" width="500"/> 
 
 ## Working with Tokens
 
@@ -126,7 +126,10 @@ See the following properties on `MFPAccessTokenData`:
 
 Once you've obtained an access token you can start making calls to the Partner API to add exercises, read diary data, etc...
 
-TODO: Link to partner docs here...
+<a href="https://docs.google.com/a/myfitnesspal.com/document/d/1tWZeXmHKlpwf3APMlHIW1xmq_yANuBxkEyyaoh1fmr8/pub">API V1 Documentation</a>
 
-## License
-MyFitnessPalSDK is available under the MIT license. See the LICENSE file for more info.
+<a href="https://docs.google.com/a/myfitnesspal.com/document/d/14j0OkNd5-YXMRhBYZVKSUBoqd56gnJqPjp8-85DvyMw/pub">API V2 Documentation</a>
+
+## Contact
+
+Please direct all inbound support inquiries to: api-group@myfitnesspal.com
