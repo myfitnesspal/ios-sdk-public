@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
     'MyFitnessPalSDK' => ['MyFitnessPalSDK/Assets/*.png']
   }
 
-  s.public_header_files = 'MyFitnessPalSDK/**/*.h'
+  s.public_header_files = 'MyFitnessPalSDK/MyFitnessPalSDK.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
