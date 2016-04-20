@@ -6,14 +6,38 @@
 //  Copyright (c) 2016 Mujtaba Hassanpur. All rights reserved.
 //
 
+#import <MyFitnessPalSDK/MyFitnessPalSDK.h>
 #import "MFPAppDelegate.h"
+
+@interface MFPAppDelegate ()
+@property (nonatomic, strong) MFPSession *mfpSession;
+@end
 
 @implementation MFPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+  
+    NSString *clientId = @"sampleapiclient";
+    NSString *urlSchemeSuffix = nil;
+    
+    self.mfpSession = [[MFPSession alloc] initWithClientId:clientId
+                                           urlSchemeSuffix:urlSchemeSuffix
+                                              responseType:MFPAuthorizationTypeAccessToken
+                                                  cacheKey:nil];
+  
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+  
+  if ([[MFPSession activeSession] handleOpenURL:url]) {
+    if ([[MFPSession activeSession] isOpen]) {
+      NSLog(@"Session opened");
+    }
+  }
+  
+  return TRUE;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

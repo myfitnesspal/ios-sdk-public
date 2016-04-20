@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6F6365820D9A9874A33B5D89'
+               BlueprintIdentifier = 'B1E4B7970F74C5A63CEDFDD3'
                BlueprintName = 'MyFitnessPalSDK-MyFitnessPalSDK'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'MyFitnessPalSDK.bundle'>

@@ -1,0 +1,1 @@
+../../../../../MyFitnessPalSDK/MFPAuthorizationRequest.h

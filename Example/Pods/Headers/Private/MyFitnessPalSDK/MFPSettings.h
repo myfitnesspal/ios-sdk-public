@@ -1,0 +1,1 @@
+../../../../../MyFitnessPalSDK/MFPSettings.h
