@@ -9,35 +9,35 @@
 /* Begin PBXBuildFile section */
 		07E1E94CB21894DB736C5DF2E62143F5 /* Pods-MyFitnessPalSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEB0D37DFA837013A6D01F0BB0FD6EC /* Pods-MyFitnessPalSDK_Example-dummy.m */; };
 		1026A4321ECD3156543A70BCE8F34123 /* Pods-MyFitnessPalSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DD7BA93D0103E210C71F76F0C79CDE /* Pods-MyFitnessPalSDK_Tests-dummy.m */; };
-		214018EE1CC7F30E0063C86F /* MFPAccessTokenData.h in Headers */ = {isa = PBXBuildFile; fileRef = 214018D21CC7F30E0063C86F /* MFPAccessTokenData.h */; };
-		214018EF1CC7F30E0063C86F /* MFPAccessTokenData.m in Sources */ = {isa = PBXBuildFile; fileRef = 214018D31CC7F30E0063C86F /* MFPAccessTokenData.m */; };
-		214018F01CC7F30E0063C86F /* MFPAdHocRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 214018D41CC7F30E0063C86F /* MFPAdHocRequest.h */; };
-		214018F11CC7F30E0063C86F /* MFPAdHocRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 214018D51CC7F30E0063C86F /* MFPAdHocRequest.m */; };
-		214018F21CC7F30E0063C86F /* MFPAuthorizationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 214018D61CC7F30E0063C86F /* MFPAuthorizationRequest.h */; };
-		214018F31CC7F30E0063C86F /* MFPAuthorizationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 214018D71CC7F30E0063C86F /* MFPAuthorizationRequest.m */; };
-		214018F41CC7F30E0063C86F /* MFPAuthorizationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 214018D81CC7F30E0063C86F /* MFPAuthorizationResponse.h */; };
-		214018F51CC7F30E0063C86F /* MFPAuthorizationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 214018D91CC7F30E0063C86F /* MFPAuthorizationResponse.m */; };
-		214018F61CC7F30E0063C86F /* MFPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 214018DA1CC7F30E0063C86F /* MFPConnection.h */; };
-		214018F71CC7F30E0063C86F /* MFPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 214018DB1CC7F30E0063C86F /* MFPConnection.m */; };
-		214018F81CC7F30E0063C86F /* MFPEcho.h in Headers */ = {isa = PBXBuildFile; fileRef = 214018DC1CC7F30E0063C86F /* MFPEcho.h */; };
-		214018F91CC7F30E0063C86F /* MFPEcho.m in Sources */ = {isa = PBXBuildFile; fileRef = 214018DD1CC7F30E0063C86F /* MFPEcho.m */; };
-		214018FA1CC7F30E0063C86F /* MFPError.h in Headers */ = {isa = PBXBuildFile; fileRef = 214018DE1CC7F30E0063C86F /* MFPError.h */; };
-		214018FB1CC7F30E0063C86F /* MFPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 214018DF1CC7F30E0063C86F /* MFPError.m */; };
-		214018FC1CC7F30E0063C86F /* MFPErrorFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 214018E01CC7F30E0063C86F /* MFPErrorFactory.h */; };
-		214018FD1CC7F30E0063C86F /* MFPErrorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 214018E11CC7F30E0063C86F /* MFPErrorFactory.m */; };
-		214018FE1CC7F30E0063C86F /* MFPFXKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 214018E21CC7F30E0063C86F /* MFPFXKeychain.h */; };
-		214018FF1CC7F30E0063C86F /* MFPFXKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 214018E31CC7F30E0063C86F /* MFPFXKeychain.m */; };
-		214019001CC7F30E0063C86F /* MFPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 214018E41CC7F30E0063C86F /* MFPResponse.h */; };
-		214019011CC7F30E0063C86F /* MFPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 214018E51CC7F30E0063C86F /* MFPResponse.m */; };
-		214019021CC7F30E0063C86F /* MFPSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 214018E61CC7F30E0063C86F /* MFPSession.h */; };
-		214019031CC7F30E0063C86F /* MFPSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 214018E71CC7F30E0063C86F /* MFPSession.m */; };
-		214019041CC7F30E0063C86F /* MFPSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 214018E81CC7F30E0063C86F /* MFPSettings.h */; };
-		214019051CC7F30E0063C86F /* MFPSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 214018E91CC7F30E0063C86F /* MFPSettings.m */; };
-		214019061CC7F30E0063C86F /* MFPUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 214018EA1CC7F30E0063C86F /* MFPUtilities.h */; };
-		214019071CC7F30E0063C86F /* MFPUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 214018EB1CC7F30E0063C86F /* MFPUtilities.m */; };
-		214019081CC7F30E0063C86F /* NSError+MFPError.h in Headers */ = {isa = PBXBuildFile; fileRef = 214018EC1CC7F30E0063C86F /* NSError+MFPError.h */; };
-		214019091CC7F30E0063C86F /* NSError+MFPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 214018ED1CC7F30E0063C86F /* NSError+MFPError.m */; };
-		2140190B1CC7F31E0063C86F /* MyFitnessPalSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 2140190A1CC7F31E0063C86F /* MyFitnessPalSDK.h */; };
+		2140192A1CC7F99E0063C86F /* MFPAccessTokenData.h in Headers */ = {isa = PBXBuildFile; fileRef = 2140190D1CC7F99E0063C86F /* MFPAccessTokenData.h */; };
+		2140192B1CC7F99E0063C86F /* MFPAccessTokenData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2140190E1CC7F99E0063C86F /* MFPAccessTokenData.m */; };
+		2140192C1CC7F99E0063C86F /* MFPAdHocRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2140190F1CC7F99E0063C86F /* MFPAdHocRequest.h */; };
+		2140192D1CC7F99E0063C86F /* MFPAdHocRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 214019101CC7F99E0063C86F /* MFPAdHocRequest.m */; };
+		2140192E1CC7F99E0063C86F /* MFPAuthorizationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 214019111CC7F99E0063C86F /* MFPAuthorizationRequest.h */; };
+		2140192F1CC7F99E0063C86F /* MFPAuthorizationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 214019121CC7F99E0063C86F /* MFPAuthorizationRequest.m */; };
+		214019301CC7F99E0063C86F /* MFPAuthorizationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 214019131CC7F99E0063C86F /* MFPAuthorizationResponse.h */; };
+		214019311CC7F99E0063C86F /* MFPAuthorizationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 214019141CC7F99E0063C86F /* MFPAuthorizationResponse.m */; };
+		214019321CC7F99E0063C86F /* MFPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 214019151CC7F99E0063C86F /* MFPConnection.h */; };
+		214019331CC7F99E0063C86F /* MFPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 214019161CC7F99E0063C86F /* MFPConnection.m */; };
+		214019341CC7F99E0063C86F /* MFPEcho.h in Headers */ = {isa = PBXBuildFile; fileRef = 214019171CC7F99E0063C86F /* MFPEcho.h */; };
+		214019351CC7F99E0063C86F /* MFPEcho.m in Sources */ = {isa = PBXBuildFile; fileRef = 214019181CC7F99E0063C86F /* MFPEcho.m */; };
+		214019361CC7F99E0063C86F /* MFPError.h in Headers */ = {isa = PBXBuildFile; fileRef = 214019191CC7F99E0063C86F /* MFPError.h */; };
+		214019371CC7F99E0063C86F /* MFPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 2140191A1CC7F99E0063C86F /* MFPError.m */; };
+		214019381CC7F99E0063C86F /* MFPErrorFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 2140191B1CC7F99E0063C86F /* MFPErrorFactory.h */; };
+		214019391CC7F99E0063C86F /* MFPErrorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2140191C1CC7F99E0063C86F /* MFPErrorFactory.m */; };
+		2140193A1CC7F99E0063C86F /* MFPFXKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 2140191D1CC7F99E0063C86F /* MFPFXKeychain.h */; };
+		2140193B1CC7F99E0063C86F /* MFPFXKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2140191E1CC7F99E0063C86F /* MFPFXKeychain.m */; };
+		2140193C1CC7F99E0063C86F /* MFPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2140191F1CC7F99E0063C86F /* MFPResponse.h */; };
+		2140193D1CC7F99E0063C86F /* MFPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 214019201CC7F99E0063C86F /* MFPResponse.m */; };
+		2140193E1CC7F99E0063C86F /* MFPSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 214019211CC7F99E0063C86F /* MFPSession.h */; };
+		2140193F1CC7F99E0063C86F /* MFPSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 214019221CC7F99E0063C86F /* MFPSession.m */; };
+		214019401CC7F99E0063C86F /* MFPSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 214019231CC7F99E0063C86F /* MFPSettings.h */; };
+		214019411CC7F99E0063C86F /* MFPSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 214019241CC7F99E0063C86F /* MFPSettings.m */; };
+		214019421CC7F99E0063C86F /* MFPUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 214019251CC7F99E0063C86F /* MFPUtilities.h */; };
+		214019431CC7F99E0063C86F /* MFPUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 214019261CC7F99E0063C86F /* MFPUtilities.m */; };
+		214019441CC7F99E0063C86F /* MyFitnessPalSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 214019271CC7F99E0063C86F /* MyFitnessPalSDK.h */; };
+		214019451CC7F99E0063C86F /* NSError+MFPError.h in Headers */ = {isa = PBXBuildFile; fileRef = 214019281CC7F99E0063C86F /* NSError+MFPError.h */; };
+		214019461CC7F99E0063C86F /* NSError+MFPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 214019291CC7F99E0063C86F /* NSError+MFPError.m */; };
 		3471EA1F4FBFBD501D52EF69F9BB9BFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		35268D06F0DCB61B4DE246B3F96AB4F9 /* Pods-MyFitnessPalSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0E33E532F438D2377D0DCF00F6A35A /* Pods-MyFitnessPalSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A394BE07346D39C38E049853C135985 /* MyFitnessPalSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C71E6CBF38D7B4DAFF40AFC65AA1FB5F /* MyFitnessPalSDK.bundle */; };
@@ -76,35 +76,35 @@
 		011BB1C12318DCCAEC60BC0739A504BF /* Pods-MyFitnessPalSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyFitnessPalSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		10B7E929937D6CCA14CE5945A0D1D83C /* MyFitnessPalSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFitnessPalSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		124849E0E5E616E7FE517D95A0E53987 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		214018D21CC7F30E0063C86F /* MFPAccessTokenData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPAccessTokenData.h; sourceTree = "<group>"; };
-		214018D31CC7F30E0063C86F /* MFPAccessTokenData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPAccessTokenData.m; sourceTree = "<group>"; };
-		214018D41CC7F30E0063C86F /* MFPAdHocRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPAdHocRequest.h; sourceTree = "<group>"; };
-		214018D51CC7F30E0063C86F /* MFPAdHocRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPAdHocRequest.m; sourceTree = "<group>"; };
-		214018D61CC7F30E0063C86F /* MFPAuthorizationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPAuthorizationRequest.h; sourceTree = "<group>"; };
-		214018D71CC7F30E0063C86F /* MFPAuthorizationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPAuthorizationRequest.m; sourceTree = "<group>"; };
-		214018D81CC7F30E0063C86F /* MFPAuthorizationResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPAuthorizationResponse.h; sourceTree = "<group>"; };
-		214018D91CC7F30E0063C86F /* MFPAuthorizationResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPAuthorizationResponse.m; sourceTree = "<group>"; };
-		214018DA1CC7F30E0063C86F /* MFPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPConnection.h; sourceTree = "<group>"; };
-		214018DB1CC7F30E0063C86F /* MFPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPConnection.m; sourceTree = "<group>"; };
-		214018DC1CC7F30E0063C86F /* MFPEcho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPEcho.h; sourceTree = "<group>"; };
-		214018DD1CC7F30E0063C86F /* MFPEcho.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPEcho.m; sourceTree = "<group>"; };
-		214018DE1CC7F30E0063C86F /* MFPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPError.h; sourceTree = "<group>"; };
-		214018DF1CC7F30E0063C86F /* MFPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPError.m; sourceTree = "<group>"; };
-		214018E01CC7F30E0063C86F /* MFPErrorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPErrorFactory.h; sourceTree = "<group>"; };
-		214018E11CC7F30E0063C86F /* MFPErrorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPErrorFactory.m; sourceTree = "<group>"; };
-		214018E21CC7F30E0063C86F /* MFPFXKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPFXKeychain.h; sourceTree = "<group>"; };
-		214018E31CC7F30E0063C86F /* MFPFXKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPFXKeychain.m; sourceTree = "<group>"; };
-		214018E41CC7F30E0063C86F /* MFPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPResponse.h; sourceTree = "<group>"; };
-		214018E51CC7F30E0063C86F /* MFPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPResponse.m; sourceTree = "<group>"; };
-		214018E61CC7F30E0063C86F /* MFPSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPSession.h; sourceTree = "<group>"; };
-		214018E71CC7F30E0063C86F /* MFPSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPSession.m; sourceTree = "<group>"; };
-		214018E81CC7F30E0063C86F /* MFPSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPSettings.h; sourceTree = "<group>"; };
-		214018E91CC7F30E0063C86F /* MFPSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPSettings.m; sourceTree = "<group>"; };
-		214018EA1CC7F30E0063C86F /* MFPUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPUtilities.h; sourceTree = "<group>"; };
-		214018EB1CC7F30E0063C86F /* MFPUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPUtilities.m; sourceTree = "<group>"; };
-		214018EC1CC7F30E0063C86F /* NSError+MFPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+MFPError.h"; sourceTree = "<group>"; };
-		214018ED1CC7F30E0063C86F /* NSError+MFPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+MFPError.m"; sourceTree = "<group>"; };
-		2140190A1CC7F31E0063C86F /* MyFitnessPalSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyFitnessPalSDK.h; path = Public/MyFitnessPalSDK.h; sourceTree = "<group>"; };
+		2140190D1CC7F99E0063C86F /* MFPAccessTokenData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPAccessTokenData.h; sourceTree = "<group>"; };
+		2140190E1CC7F99E0063C86F /* MFPAccessTokenData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPAccessTokenData.m; sourceTree = "<group>"; };
+		2140190F1CC7F99E0063C86F /* MFPAdHocRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPAdHocRequest.h; sourceTree = "<group>"; };
+		214019101CC7F99E0063C86F /* MFPAdHocRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPAdHocRequest.m; sourceTree = "<group>"; };
+		214019111CC7F99E0063C86F /* MFPAuthorizationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPAuthorizationRequest.h; sourceTree = "<group>"; };
+		214019121CC7F99E0063C86F /* MFPAuthorizationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPAuthorizationRequest.m; sourceTree = "<group>"; };
+		214019131CC7F99E0063C86F /* MFPAuthorizationResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPAuthorizationResponse.h; sourceTree = "<group>"; };
+		214019141CC7F99E0063C86F /* MFPAuthorizationResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPAuthorizationResponse.m; sourceTree = "<group>"; };
+		214019151CC7F99E0063C86F /* MFPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPConnection.h; sourceTree = "<group>"; };
+		214019161CC7F99E0063C86F /* MFPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPConnection.m; sourceTree = "<group>"; };
+		214019171CC7F99E0063C86F /* MFPEcho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPEcho.h; sourceTree = "<group>"; };
+		214019181CC7F99E0063C86F /* MFPEcho.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPEcho.m; sourceTree = "<group>"; };
+		214019191CC7F99E0063C86F /* MFPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPError.h; sourceTree = "<group>"; };
+		2140191A1CC7F99E0063C86F /* MFPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPError.m; sourceTree = "<group>"; };
+		2140191B1CC7F99E0063C86F /* MFPErrorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPErrorFactory.h; sourceTree = "<group>"; };
+		2140191C1CC7F99E0063C86F /* MFPErrorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPErrorFactory.m; sourceTree = "<group>"; };
+		2140191D1CC7F99E0063C86F /* MFPFXKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPFXKeychain.h; sourceTree = "<group>"; };
+		2140191E1CC7F99E0063C86F /* MFPFXKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPFXKeychain.m; sourceTree = "<group>"; };
+		2140191F1CC7F99E0063C86F /* MFPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPResponse.h; sourceTree = "<group>"; };
+		214019201CC7F99E0063C86F /* MFPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPResponse.m; sourceTree = "<group>"; };
+		214019211CC7F99E0063C86F /* MFPSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPSession.h; sourceTree = "<group>"; };
+		214019221CC7F99E0063C86F /* MFPSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPSession.m; sourceTree = "<group>"; };
+		214019231CC7F99E0063C86F /* MFPSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPSettings.h; sourceTree = "<group>"; };
+		214019241CC7F99E0063C86F /* MFPSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPSettings.m; sourceTree = "<group>"; };
+		214019251CC7F99E0063C86F /* MFPUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPUtilities.h; sourceTree = "<group>"; };
+		214019261CC7F99E0063C86F /* MFPUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPUtilities.m; sourceTree = "<group>"; };
+		214019271CC7F99E0063C86F /* MyFitnessPalSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFitnessPalSDK.h; sourceTree = "<group>"; };
+		214019281CC7F99E0063C86F /* NSError+MFPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+MFPError.h"; sourceTree = "<group>"; };
+		214019291CC7F99E0063C86F /* NSError+MFPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+MFPError.m"; sourceTree = "<group>"; };
 		38B059831FBED6317383B72C92AED3CF /* Pods-MyFitnessPalSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyFitnessPalSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4903517BCC254096301B3F18277D09DF /* MyFitnessPalSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MyFitnessPalSDK.modulemap; sourceTree = "<group>"; };
@@ -187,49 +187,6 @@
 			);
 			name = "Pods-MyFitnessPalSDK_Tests";
 			path = "Target Support Files/Pods-MyFitnessPalSDK_Tests";
-			sourceTree = "<group>";
-		};
-		214018D11CC7F2F40063C86F /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				2140190A1CC7F31E0063C86F /* MyFitnessPalSDK.h */,
-			);
-			name = Public;
-			sourceTree = "<group>";
-		};
-		427798D9B250B200DCFC12893ACEBD4F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				214018D21CC7F30E0063C86F /* MFPAccessTokenData.h */,
-				214018D31CC7F30E0063C86F /* MFPAccessTokenData.m */,
-				214018D41CC7F30E0063C86F /* MFPAdHocRequest.h */,
-				214018D51CC7F30E0063C86F /* MFPAdHocRequest.m */,
-				214018D61CC7F30E0063C86F /* MFPAuthorizationRequest.h */,
-				214018D71CC7F30E0063C86F /* MFPAuthorizationRequest.m */,
-				214018D81CC7F30E0063C86F /* MFPAuthorizationResponse.h */,
-				214018D91CC7F30E0063C86F /* MFPAuthorizationResponse.m */,
-				214018DA1CC7F30E0063C86F /* MFPConnection.h */,
-				214018DB1CC7F30E0063C86F /* MFPConnection.m */,
-				214018DC1CC7F30E0063C86F /* MFPEcho.h */,
-				214018DD1CC7F30E0063C86F /* MFPEcho.m */,
-				214018DE1CC7F30E0063C86F /* MFPError.h */,
-				214018DF1CC7F30E0063C86F /* MFPError.m */,
-				214018E01CC7F30E0063C86F /* MFPErrorFactory.h */,
-				214018E11CC7F30E0063C86F /* MFPErrorFactory.m */,
-				214018E21CC7F30E0063C86F /* MFPFXKeychain.h */,
-				214018E31CC7F30E0063C86F /* MFPFXKeychain.m */,
-				214018E41CC7F30E0063C86F /* MFPResponse.h */,
-				214018E51CC7F30E0063C86F /* MFPResponse.m */,
-				214018E61CC7F30E0063C86F /* MFPSession.h */,
-				214018E71CC7F30E0063C86F /* MFPSession.m */,
-				214018E81CC7F30E0063C86F /* MFPSettings.h */,
-				214018E91CC7F30E0063C86F /* MFPSettings.m */,
-				214018EA1CC7F30E0063C86F /* MFPUtilities.h */,
-				214018EB1CC7F30E0063C86F /* MFPUtilities.m */,
-				214018EC1CC7F30E0063C86F /* NSError+MFPError.h */,
-				214018ED1CC7F30E0063C86F /* NSError+MFPError.m */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		61007D077EBC3C003D1866CFD8059CC3 /* Products */ = {
@@ -332,8 +289,35 @@
 		D35845AB12821E75233492D2766FCD07 /* MyFitnessPalSDK */ = {
 			isa = PBXGroup;
 			children = (
-				214018D11CC7F2F40063C86F /* Public */,
-				427798D9B250B200DCFC12893ACEBD4F /* Classes */,
+				2140190D1CC7F99E0063C86F /* MFPAccessTokenData.h */,
+				2140190E1CC7F99E0063C86F /* MFPAccessTokenData.m */,
+				2140190F1CC7F99E0063C86F /* MFPAdHocRequest.h */,
+				214019101CC7F99E0063C86F /* MFPAdHocRequest.m */,
+				214019111CC7F99E0063C86F /* MFPAuthorizationRequest.h */,
+				214019121CC7F99E0063C86F /* MFPAuthorizationRequest.m */,
+				214019131CC7F99E0063C86F /* MFPAuthorizationResponse.h */,
+				214019141CC7F99E0063C86F /* MFPAuthorizationResponse.m */,
+				214019151CC7F99E0063C86F /* MFPConnection.h */,
+				214019161CC7F99E0063C86F /* MFPConnection.m */,
+				214019171CC7F99E0063C86F /* MFPEcho.h */,
+				214019181CC7F99E0063C86F /* MFPEcho.m */,
+				214019191CC7F99E0063C86F /* MFPError.h */,
+				2140191A1CC7F99E0063C86F /* MFPError.m */,
+				2140191B1CC7F99E0063C86F /* MFPErrorFactory.h */,
+				2140191C1CC7F99E0063C86F /* MFPErrorFactory.m */,
+				2140191D1CC7F99E0063C86F /* MFPFXKeychain.h */,
+				2140191E1CC7F99E0063C86F /* MFPFXKeychain.m */,
+				2140191F1CC7F99E0063C86F /* MFPResponse.h */,
+				214019201CC7F99E0063C86F /* MFPResponse.m */,
+				214019211CC7F99E0063C86F /* MFPSession.h */,
+				214019221CC7F99E0063C86F /* MFPSession.m */,
+				214019231CC7F99E0063C86F /* MFPSettings.h */,
+				214019241CC7F99E0063C86F /* MFPSettings.m */,
+				214019251CC7F99E0063C86F /* MFPUtilities.h */,
+				214019261CC7F99E0063C86F /* MFPUtilities.m */,
+				214019271CC7F99E0063C86F /* MyFitnessPalSDK.h */,
+				214019281CC7F99E0063C86F /* NSError+MFPError.h */,
+				214019291CC7F99E0063C86F /* NSError+MFPError.m */,
 			);
 			path = MyFitnessPalSDK;
 			sourceTree = "<group>";
@@ -353,22 +337,22 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				214019081CC7F30E0063C86F /* NSError+MFPError.h in Headers */,
-				214018F21CC7F30E0063C86F /* MFPAuthorizationRequest.h in Headers */,
-				214019021CC7F30E0063C86F /* MFPSession.h in Headers */,
-				214019041CC7F30E0063C86F /* MFPSettings.h in Headers */,
-				214018EE1CC7F30E0063C86F /* MFPAccessTokenData.h in Headers */,
-				214018F81CC7F30E0063C86F /* MFPEcho.h in Headers */,
-				214019061CC7F30E0063C86F /* MFPUtilities.h in Headers */,
-				214018F01CC7F30E0063C86F /* MFPAdHocRequest.h in Headers */,
-				2140190B1CC7F31E0063C86F /* MyFitnessPalSDK.h in Headers */,
-				214018FC1CC7F30E0063C86F /* MFPErrorFactory.h in Headers */,
+				2140192E1CC7F99E0063C86F /* MFPAuthorizationRequest.h in Headers */,
+				2140193E1CC7F99E0063C86F /* MFPSession.h in Headers */,
+				214019401CC7F99E0063C86F /* MFPSettings.h in Headers */,
+				2140192A1CC7F99E0063C86F /* MFPAccessTokenData.h in Headers */,
+				214019341CC7F99E0063C86F /* MFPEcho.h in Headers */,
+				214019421CC7F99E0063C86F /* MFPUtilities.h in Headers */,
+				2140192C1CC7F99E0063C86F /* MFPAdHocRequest.h in Headers */,
+				214019381CC7F99E0063C86F /* MFPErrorFactory.h in Headers */,
 				89A6B9FAA58A21DDD5BADF7A6543CF88 /* MyFitnessPalSDK-umbrella.h in Headers */,
-				214019001CC7F30E0063C86F /* MFPResponse.h in Headers */,
-				214018FE1CC7F30E0063C86F /* MFPFXKeychain.h in Headers */,
-				214018FA1CC7F30E0063C86F /* MFPError.h in Headers */,
-				214018F61CC7F30E0063C86F /* MFPConnection.h in Headers */,
-				214018F41CC7F30E0063C86F /* MFPAuthorizationResponse.h in Headers */,
+				2140193C1CC7F99E0063C86F /* MFPResponse.h in Headers */,
+				2140193A1CC7F99E0063C86F /* MFPFXKeychain.h in Headers */,
+				214019451CC7F99E0063C86F /* NSError+MFPError.h in Headers */,
+				214019361CC7F99E0063C86F /* MFPError.h in Headers */,
+				214019441CC7F99E0063C86F /* MyFitnessPalSDK.h in Headers */,
+				214019321CC7F99E0063C86F /* MFPConnection.h in Headers */,
+				214019301CC7F99E0063C86F /* MFPAuthorizationResponse.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,20 +500,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCA62B032E170CC1B12864E52AE97E57 /* MyFitnessPalSDK-dummy.m in Sources */,
-				214018FF1CC7F30E0063C86F /* MFPFXKeychain.m in Sources */,
-				214019071CC7F30E0063C86F /* MFPUtilities.m in Sources */,
-				214019031CC7F30E0063C86F /* MFPSession.m in Sources */,
-				214018F71CC7F30E0063C86F /* MFPConnection.m in Sources */,
-				214019051CC7F30E0063C86F /* MFPSettings.m in Sources */,
-				214018FB1CC7F30E0063C86F /* MFPError.m in Sources */,
-				214018F31CC7F30E0063C86F /* MFPAuthorizationRequest.m in Sources */,
-				214018F11CC7F30E0063C86F /* MFPAdHocRequest.m in Sources */,
-				214018EF1CC7F30E0063C86F /* MFPAccessTokenData.m in Sources */,
-				214019091CC7F30E0063C86F /* NSError+MFPError.m in Sources */,
-				214019011CC7F30E0063C86F /* MFPResponse.m in Sources */,
-				214018F91CC7F30E0063C86F /* MFPEcho.m in Sources */,
-				214018FD1CC7F30E0063C86F /* MFPErrorFactory.m in Sources */,
-				214018F51CC7F30E0063C86F /* MFPAuthorizationResponse.m in Sources */,
+				2140193B1CC7F99E0063C86F /* MFPFXKeychain.m in Sources */,
+				214019431CC7F99E0063C86F /* MFPUtilities.m in Sources */,
+				2140193F1CC7F99E0063C86F /* MFPSession.m in Sources */,
+				214019331CC7F99E0063C86F /* MFPConnection.m in Sources */,
+				214019411CC7F99E0063C86F /* MFPSettings.m in Sources */,
+				214019371CC7F99E0063C86F /* MFPError.m in Sources */,
+				2140192F1CC7F99E0063C86F /* MFPAuthorizationRequest.m in Sources */,
+				2140192D1CC7F99E0063C86F /* MFPAdHocRequest.m in Sources */,
+				2140192B1CC7F99E0063C86F /* MFPAccessTokenData.m in Sources */,
+				214019461CC7F99E0063C86F /* NSError+MFPError.m in Sources */,
+				2140193D1CC7F99E0063C86F /* MFPResponse.m in Sources */,
+				214019351CC7F99E0063C86F /* MFPEcho.m in Sources */,
+				214019391CC7F99E0063C86F /* MFPErrorFactory.m in Sources */,
+				214019311CC7F99E0063C86F /* MFPAuthorizationResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
