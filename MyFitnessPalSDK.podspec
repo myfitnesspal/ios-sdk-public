@@ -27,12 +27,12 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'MyFitnessPalSDK/Classes/**/*'
+  s.source_files = 'MyFitnessPalSDK/**/*'
   s.resource_bundles = {
     'MyFitnessPalSDK' => ['MyFitnessPalSDK/Assets/*.png']
   }
 
-  s.public_header_files = 'MyFitnessPalSDK/**/MyFitnessPalSDK.h'
+  s.public_header_files = 'MyFitnessPalSDK/MyFitnessPalSDK.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
