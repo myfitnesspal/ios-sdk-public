@@ -9,8 +9,8 @@ platform :ios, '8.0'
 pod 'MyFitnessPalSDK', :git => 'https://github.com/myfitnesspal/ios-sdk-public.git'
 ```
 
-## Installation with Framework
-Open the MyFitnessPalSDK workspace and build the MyFitnessPalSDK (framework) target. Drag and drop the `MyFitnessPalSDK.framework` into your Xcode project.
+## Manual Installation
+Open the MyFitnessPalSDK workspace and build the MyFitnessPalSDK-Universal target. Then drag and drop the `MyFitnessPalSDK.framework` into your Xcode project.
 
 ## Usage
 Update your app delegate to include creation of an `MFPSession` object and a URL handler.
