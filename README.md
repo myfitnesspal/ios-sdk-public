@@ -1,8 +1,16 @@
 ## Introduction
 The purpose of this document is to provide installation and usage instructions for the MyFitnessPal SDK for iOS.
 
-## Installation
-Drag and drop the `MyFitnessPalSDK.framework` into your Xcode project.
+## Installation with CocoaPods
+The MyFitnessPalSDK supports installation via [CocoaPods](http://cocoapods.org/).
+
+```
+platform :ios, '8.0'
+pod 'MyFitnessPalSDK', :git => 'https://github.com/myfitnesspal/ios-sdk-public.git'
+```
+
+## Installation with Framework
+Open the MyFitnessPalSDK workspace and build the MyFitnessPalSDK (framework) target. Drag and drop the `MyFitnessPalSDK.framework` into your Xcode project.
 
 ## Usage
 Update your app delegate to include creation of an `MFPSession` object and a URL handler.
