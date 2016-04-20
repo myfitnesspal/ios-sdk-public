@@ -18,6 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
+                       The MyFitnessPalSDK for iOS allows partners to authenticate
+                       with MyFitnessPal and access MyFitnessPal APIs.
                        DESC
 
   s.homepage         = "https://github.com/myfitnesspal/ios-sdk-public"
