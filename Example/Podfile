@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MyFitnessPalSDK_Example', :exclusive => true do
+  pod 'MyFitnessPalSDK', :path => '../'
+end
+
+target 'MyFitnessPalSDK_Tests', :exclusive => true do
+  pod 'MyFitnessPalSDK', :path => '../'
+
+  
+end

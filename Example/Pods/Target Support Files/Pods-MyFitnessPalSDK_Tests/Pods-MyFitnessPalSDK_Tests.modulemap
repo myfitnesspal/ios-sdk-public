@@ -1,0 +1,6 @@
+framework module Pods_MyFitnessPalSDK_Tests {
+  umbrella header "Pods-MyFitnessPalSDK_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

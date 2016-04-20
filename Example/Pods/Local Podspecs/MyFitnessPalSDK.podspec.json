@@ -1,0 +1,24 @@
+{
+  "name": "MyFitnessPalSDK",
+  "version": "0.1.0",
+  "summary": "A short description of MyFitnessPalSDK.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/MyFitnessPalSDK",
+  "license": "MIT",
+  "authors": {
+    "Mujtaba Hassanpur": "mhassanpur@myfitnesspal.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/MyFitnessPalSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MyFitnessPalSDK/Classes/**/*",
+  "resource_bundles": {
+    "MyFitnessPalSDK": [
+      "MyFitnessPalSDK/Assets/*.png"
+    ]
+  }
+}

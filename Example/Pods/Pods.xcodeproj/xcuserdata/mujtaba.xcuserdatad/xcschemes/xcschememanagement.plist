@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>MyFitnessPalSDK-MyFitnessPalSDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MyFitnessPalSDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MyFitnessPalSDK_Example.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MyFitnessPalSDK_Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1C81B131E6DAE4432EB794400EC8DA00</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A60B9ABAD46F373EFC52B28F75C2FD15</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B6850E10821C5498CE3C4DEEEA533657</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F98B099C2ED15ED52C4D99056FE6C9BC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
