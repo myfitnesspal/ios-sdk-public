@@ -120,9 +120,9 @@
 
 + (NSString *)stringRepresentationForKey:(NSString *)key andValue:(NSString *)value {
   NSMutableString *string = [[NSMutableString alloc] init];
-  [string appendString:[key stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]];
+  [string appendString:[key stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
   [string appendString:@"="];
-  [string appendString:[value stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]];
+  [string appendString:[value stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
   return [string copy];
 }
 
@@ -134,9 +134,9 @@
       if (![string isEqual:@""]) {
         [string appendString:@"&"];
       }
-      [string appendString:[key stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]];
+      [string appendString:[key stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
       [string appendString:@"[]="];
-      [string appendString:[value stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]];
+      [string appendString:[value stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     }
   }
   return [string copy];

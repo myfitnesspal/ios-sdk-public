@@ -222,6 +222,12 @@ NSString *const MFPAuthorizationTypeCode = @"code";
   return service;
 }
 
+- (NSString *)keychainKeyWithCacheKey:(NSString *)cacheKey {
+  NSString *key = (cacheKey != nil)? cacheKey : @"tokenData";
+  key = [key stringByAppendingFormat:@"%@:%@", [self keychainService], key];
+  return key;
+}
+
 - (void)storeAccessTokenData:(MFPAccessTokenData *)accessTokenData
                  forCacheKey:(NSString *)cacheKey {
   
@@ -248,7 +254,7 @@ NSString *const MFPAuthorizationTypeCode = @"code";
   
   // Store the json object in the keychain
   NSData *serialized = [NSKeyedArchiver archivedDataWithRootObject:data];
-  NSString *key = (cacheKey != nil)? cacheKey : @"tokenData";
+  NSString *key = [self keychainKeyWithCacheKey:cacheKey];
   if (![self.keychain setObject:serialized forKey:key]) {
     NSLog(@"%s: Error saving tokenData to keychain!", __FUNCTION__);
     return;
@@ -257,9 +263,9 @@ NSString *const MFPAuthorizationTypeCode = @"code";
 }
 
 - (MFPAccessTokenData *)fetchAccessTokenDataForCacheKey:(NSString *)cacheKey {
-  NSString *key = (cacheKey != nil)? cacheKey : @"tokenData";
+  NSString *key = [self keychainKeyWithCacheKey:cacheKey];
   NSData *serialized = [self.keychain objectForKey:key];
-  if (serialized == nil) {
+  if (serialized == nil || ![serialized isKindOfClass:[NSData class]]) {
     NSLog(@"%s: Error retrieving tokenData form keychain!", __FUNCTION__);
     return nil;
   }
@@ -271,31 +277,11 @@ NSString *const MFPAuthorizationTypeCode = @"code";
   NSString *accessToken, *refreshToken;
   
   if (data[@"access_token"]) {
-   
-    if ([[data[@"access_token"] class] isSubclassOfClass:[NSString class]]) {
-      
-      accessToken = data[@"access_token"];
-      
-    } else {
-      
-      accessToken = data[@"access_token"];
-      
-    }
-    
+    accessToken = data[@"access_token"];
   }
 
   if (data[@"refresh_token"]) {
-    
-    if ([[data[@"refresh_token"] class] isSubclassOfClass:[NSString class]]) {
-      
-      refreshToken = data[@"refresh_token"];
-      
-    } else {
-      
-      refreshToken = data[@"refresh_token"];
-      
-    }
-    
+    refreshToken = data[@"refresh_token"];
   }
 
   NSString *tokenType = data[@"token_type"];
@@ -314,10 +300,10 @@ NSString *const MFPAuthorizationTypeCode = @"code";
                                                                                    userId:user
                                                                               permissions:permissions
                                                                            expirationDate:expirationDate];
-
+    
     // Will convert the access and refresh tokens to be encrypted
     if ([[data[@"access_token"] class] isSubclassOfClass:[NSString class]]) {
-
+      
       [self storeAccessTokenData:accessTokenData forCacheKey:cacheKey];
       
     }
@@ -404,7 +390,7 @@ NSString *const MFPAuthorizationTypeCode = @"code";
 - (BOOL)removeAccessTokenData {
   
   _accessTokenData = nil;
-  NSString *key = (self.cacheKey)? self.cacheKey : @"";
+  NSString *key = [self keychainKeyWithCacheKey:self.cacheKey];
   if ([self.keychain objectForKey:key]) {
     
     [self.keychain removeObjectForKey:key];
