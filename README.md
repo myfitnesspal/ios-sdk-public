@@ -1,6 +1,8 @@
 ## Introduction
 The purpose of this document is to provide installation and usage instructions for the MyFitnessPal SDK for iOS.
 
+*Note:* The MyFitnessPalSDK may only be used by existing MFP partners. Please contact api-group@myfitnesspal.com for information on becoming a partner and obtaining a valid `clientId`.
+
 ## Installation with CocoaPods
 The MyFitnessPalSDK supports installation via [CocoaPods](http://cocoapods.org/).
 
