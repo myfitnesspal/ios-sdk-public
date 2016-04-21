@@ -40,8 +40,9 @@
     [requestParameters addEntriesFromDictionary:@{@"action" : action }];
   }
   
-  NSURL *url = [[MFPSettings baseURL] URLByAppendingPathComponent:path];
-  NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+  NSURLComponents *urlComponents = [[NSURLComponents alloc] initWithString:[MFPSettings siteRootUrl]];
+  urlComponents.path = path;
+  NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:urlComponents.URL];
   [request setValue:encoding forHTTPHeaderField:@"Content-Type"];
   
   if ([method isEqualToString:@"POST"]) {
@@ -65,20 +66,11 @@
       
     }
     
-    
-    
-    
   } else if ([method isEqualToString:@"GET"]) {
     
-    NSString *query = [MFPConnection queryStringForParameters:parameters];
-    if (!action) {
-      path = [path stringByAppendingString:@"?"];
-    }
-    if (parameters) {
-      path = [path stringByAppendingString:@"&"];
-      path = [path stringByAppendingString:query];
-    }
-    
+    urlComponents.query = [MFPConnection queryStringForParameters:parameters];
+    request = [NSMutableURLRequest requestWithURL:urlComponents.URL];
+    [request setValue:encoding forHTTPHeaderField:@"Content-Type"];
     request.HTTPMethod = @"GET";
     
   }
@@ -94,20 +86,36 @@
         statusCode = httpResponse.statusCode;
       }
       
-      // Handle failures
-      if (error) {
-        MFPResponse *resp = [[MFPResponse alloc] initWithData:nil error:&err statusCode:statusCode];
-        onConnectionFailure(resp, &err);
-      }
-      
-      // Handle success
-      id respData = [[NSMutableDictionary alloc] init];
+      id respData = nil;
       if (response != nil && [response.MIMEType isEqualToString:@"application/json"]) {
         id jsonData = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         if (jsonData != nil) {
           respData = jsonData;
         }
       }
+      
+      if (!err && (statusCode < 200 || statusCode >= 300)) {
+        NSString *message = @"Server error";
+        if (respData && [respData isKindOfClass:[NSDictionary class]]) {
+          NSDictionary *respDict = (NSDictionary *) respData;
+          if (respDict[@"error"]) {
+            NSDictionary *errorDict = respDict[@"error"];
+            NSString *type = errorDict[@"type"];
+            NSString *msg = errorDict[@"message"];
+            message = [NSString stringWithFormat:@"%@: %@", type, msg];
+            NSLog(@"%s: %@", __FUNCTION__, message);
+          }
+        }
+        err = [NSError errorWithDomain:@"com.myfitnesspal.sdk" code:statusCode userInfo:@{NSLocalizedDescriptionKey: message}];
+      }
+      
+      // Handle failures
+      if (err) {
+        MFPResponse *resp = [[MFPResponse alloc] initWithData:respData error:&err statusCode:statusCode];
+        onConnectionFailure(resp, &err);
+      }
+      
+      // Handle success
       MFPResponse *resp = [[MFPResponse alloc] initWithData:respData error:&err statusCode:statusCode];
       onConnectionSuccess(resp);
     });
