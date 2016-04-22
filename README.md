@@ -1,8 +1,21 @@
 ## Introduction
 The purpose of this document is to provide installation and usage instructions for the MyFitnessPal SDK for iOS.
 
-## Installation
-Drag and drop the `MyFitnessPalSDK.framework` into your Xcode project.
+#### Considerations:
+ - This SDK is intended to be used for MFP v1 API tokens.
+ - End users must have the MFP app installed on their device.
+ - The MyFitnessPalSDK may only be used by existing MFP partners. Please contact api-group@myfitnesspal.com for information on becoming a partner and obtaining a valid `clientId`.
+
+## Installation with CocoaPods
+The MyFitnessPalSDK supports installation via [CocoaPods](http://cocoapods.org/).
+
+```
+platform :ios, '8.0'
+pod 'MyFitnessPalSDK', :git => 'https://github.com/myfitnesspal/ios-sdk-public.git'
+```
+
+## Manual Installation
+Open the MyFitnessPalSDK workspace and build the MyFitnessPalSDK-Universal target. Then drag and drop the `MyFitnessPalSDK.framework` into your Xcode project.
 
 ## Usage
 Update your app delegate to include creation of an `MFPSession` object and a URL handler.

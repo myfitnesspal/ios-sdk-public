@@ -1,0 +1,14 @@
+PODS:
+  - MyFitnessPalSDK (2.0.0)
+
+DEPENDENCIES:
+  - MyFitnessPalSDK (from `../`)
+
+EXTERNAL SOURCES:
+  MyFitnessPalSDK:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MyFitnessPalSDK: 8dcc1a45c8bdb58d9a46cfe321e33f513ef24c61
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,6 @@
+framework module MyFitnessPalSDK {
+  umbrella header "MyFitnessPalSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

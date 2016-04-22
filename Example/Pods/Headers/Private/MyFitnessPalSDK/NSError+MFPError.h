@@ -1,0 +1,1 @@
+../../../../../MyFitnessPalSDK/NSError+MFPError.h

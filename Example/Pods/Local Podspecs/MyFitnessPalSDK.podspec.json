@@ -1,0 +1,25 @@
+{
+  "name": "MyFitnessPalSDK",
+  "version": "2.0.0",
+  "summary": "The MyFitnessPal SDK for iOS.",
+  "description": "",
+  "homepage": "https://github.com/myfitnesspal/ios-sdk-public",
+  "license": "Apache Version 2.0",
+  "authors": {
+    "MyFitnessPal": "api-group@myfitnesspal.com"
+  },
+  "source": {
+    "git": "https://github.com/myfitnesspal/ios-sdk-public.git",
+    "tag": "2.0.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MyFitnessPalSDK/**/*",
+  "resource_bundles": {
+    "MyFitnessPalSDK": [
+      "MyFitnessPalSDK/Assets/*.png"
+    ]
+  },
+  "public_header_files": "MyFitnessPalSDK/**/*.h"
+}
