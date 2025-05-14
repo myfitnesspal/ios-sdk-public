@@ -1,12 +1,15 @@
 ## Introduction
+
 The purpose of this document is to provide installation and usage instructions for the MyFitnessPal SDK for iOS.
 
 #### Considerations:
- - This SDK is intended to be used for MFP v1 API tokens.
- - End users must have the MFP app installed on their device.
- - The MyFitnessPalSDK may only be used by existing MFP partners. Please contact api-group@myfitnesspal.com for information on becoming a partner and obtaining a valid `clientId`.
+
+- This SDK is intended to be used for MFP v1 API tokens.
+- End users must have the MFP app installed on their device.
+- The MyFitnessPalSDK may only be used by existing MFP partners. Please contact api-group@myfitnesspal.com for information on becoming a partner and obtaining a valid `clientId`.
 
 ## Installation with CocoaPods
+
 The MyFitnessPalSDK supports installation via [CocoaPods](http://cocoapods.org/).
 
 ```
@@ -15,9 +18,11 @@ pod 'MyFitnessPalSDK', :git => 'https://github.com/myfitnesspal/ios-sdk-public.g
 ```
 
 ## Manual Installation
+
 Open the MyFitnessPalSDK workspace and build the MyFitnessPalSDK-Universal target. Then drag and drop the `MyFitnessPalSDK.framework` into your Xcode project.
 
 ## Usage
+
 Update your app delegate to include creation of an `MFPSession` object and a URL handler.
 
 ```objc
@@ -31,53 +36,54 @@ Update your app delegate to include creation of an `MFPSession` object and a URL
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  
+
   self.mfpSession = [[MFPSession alloc] initWithClientId:@"sampleapiclient"
                                          urlSchemeSuffix:nil
                                             responseType:MFPAuthorizationTypeAccessToken
                                                 cacheKey:nil];
-  
+
   return YES;
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-  
+
   if ([[MFPSession activeSession] handleOpenURL:url]) {
     if ([[MFPSession activeSession] isOpen]) {
       NSLog(@"Session opened");
     }
   }
-  
+
   return TRUE;
 }
 ```
 
 ## Setting the URL Type
 
-In order for the native MyFitnessPal iOS app to call back into your app, you'll need to add a `URL Type` to your `Info.plist`. 
+In order for the native MyFitnessPal iOS app to call back into your app, you'll need to add a `URL Type` to your `Info.plist`.
 
 Go to Targets -> "target name" -> Info -> URL Types. From there, you can set a target URL. The URL scheme must have a prefix of `mfp`. Optionally, if you have multiple apps on the same device, you can have a suffix such as `premium`.
 
 Putting it all together, your URL scheme would be `mfp-sampleapiclient-premium`. If you only have one app, then the URL scheme would be `mfp-sampleapiclient`.
 
-<img src="https://github.com/myfitnesspal/ios-sdk/blob/master/readme_images/URL_Types.png" alt="URL Types" width="700"/> 
+<img src="https://github.com/myfitnesspal/ios-sdk/blob/master/readme_images/URL_Types.png" alt="URL Types" width="700"/>
 
 ## Whitelisting Custom URL Schemes
 
-The SDK uses app to app deep linking which requires use of the `canOpenUrl` method to see if the MyFitnessPal app is installed on your device. iOS 9 introduced security measures against this which require us to now whitelist our custom URL schemes. 
+The SDK uses app to app deep linking which requires use of the `canOpenUrl` method to see if the MyFitnessPal app is installed on your device. iOS 9 introduced security measures against this which require us to now whitelist our custom URL schemes.
 
 To do this open up your `Info.plist` file and add an array called `LSApplicationQueriesSchemes`. Then add 2 strings as children called `mfp` and `mfphd`.
 
-<img src="https://github.com/myfitnesspal/ios-sdk/blob/master/readme_images/LSApplicationQueriesSchemes.png" alt="LSApplicationQueriesSchemes" width="500"/> 
+<img src="https://github.com/myfitnesspal/ios-sdk/blob/master/readme_images/LSApplicationQueriesSchemes.png" alt="LSApplicationQueriesSchemes" width="500"/>
 
 ## Working with Tokens
 
 In order to make calls to the MyFitnessPal Partner API you need to obtain an `accessToken`. The SDK wraps this up inside the `MFPAccessTokenData` object.
 
 See the following properties on `MFPAccessTokenData`:
-* `accessToken`
-* `refreshToken`
-* `expirationDate`
+
+- `accessToken`
+- `refreshToken`
+- `expirationDate`
 
 ### Obtaining Tokens
 
@@ -116,6 +122,7 @@ See the following properties on `MFPAccessTokenData`:
   }
 }
 ```
+
 ### Reading data
 
 ```objc
@@ -140,9 +147,7 @@ Doxygen documentation can be found in this repo under `/Documentation/html/index
 
 Once you've obtained an access token you can start making calls to the Partner API to add exercises, read diary data, etc...
 
-<a href="https://docs.google.com/a/myfitnesspal.com/document/d/1tWZeXmHKlpwf3APMlHIW1xmq_yANuBxkEyyaoh1fmr8/pub">API V1 Documentation</a>
-
-<a href="https://docs.google.com/a/myfitnesspal.com/document/d/14j0OkNd5-YXMRhBYZVKSUBoqd56gnJqPjp8-85DvyMw/pub">API V2 Documentation</a>
+<a href="https://myfitnesspalapi.com/docs/">API Documentation</a>
 
 ## Contact
 
